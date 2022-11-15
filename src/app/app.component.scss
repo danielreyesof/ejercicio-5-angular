@@ -1,0 +1,77 @@
+main {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  font-size: 25px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="number"] {
+  -webkit-appearance: textfield !important;
+  -moz-appearance: textfield !important;
+  appearance: textfield !important;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input {
+  border: 2px #dcd3d3 solid;
+  width: 20vw;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 30px;
+  transition: transform 0.2s;
+}
+
+input::placeholder {
+  color: #dcd3d3;
+  opacity: 1;
+  font-size: 20px;
+  text-align: center;
+
+}
+
+input:focus {
+  outline: none;
+  border: 2px orange solid;
+  transform: scale(1.05);
+}
+
+button {
+  width: 20vw;
+  height: 50px;
+  border-radius: 15px;
+  border: none;
+  transition: transform 0.2s;
+  background-color: orange;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+section{
+  margin-bottom: 2rem;
+}
